@@ -56,7 +56,6 @@ public class MatchServiceImpl implements MatchService {
                 match1.setTextComplete(textComplete);
                 match1.setMatchStatus();
                 matches.add(match1);
-//                update the match in database
                 updateMatch(match1);
             }
         } catch (IOException e) {
@@ -103,7 +102,6 @@ public class MatchServiceImpl implements MatchService {
                             points.add(td.text());
                         }
                     });
-//                    System.out.println(points);
                     pointTable.add(points);
                 }
 
